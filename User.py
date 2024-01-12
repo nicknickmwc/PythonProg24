@@ -127,7 +127,7 @@ class Client(User):
         for day, time in freeItems.items():
             s.append('День: %s, Время: %s' %(day, time))
 
-        textToUser = 'Свободные даты: День 1, Время: 12:00 День 4, Время: 12:00', s
+        textToUser = 'Свободные даты:', s
 
         #Кнопки
         #buttons = [telebot.types.ReplyKeyboardMarkup(row_width=1).add(telebot.types.KeyboardButton('Текущий месяц'), telebot.types.KeyboardButton('Следующий месяц')).to_json()]
